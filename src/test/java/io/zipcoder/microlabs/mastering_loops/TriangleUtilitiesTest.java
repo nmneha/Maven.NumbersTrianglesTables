@@ -26,7 +26,8 @@ public class TriangleUtilitiesTest {
                 "******\n" +
                 "*******\n" +
                 "********\n" +
-                "*********\n";
+                "*********\n"+
+                "**********\n";
         String actual = TriangleUtilities.getTriangle(10);
         Assert.assertEquals(expected, actual);
     }
@@ -37,7 +38,8 @@ public class TriangleUtilitiesTest {
                 "*\n" +
                 "**\n" +
                 "***\n" +
-                "****\n";
+                "****\n" +
+                "*****\n";
 String actual = TriangleUtilities.getTriangle(5);
         Assert.assertEquals(expected, actual);
     }
@@ -53,8 +55,9 @@ String actual = TriangleUtilities.getTriangle(5);
                 "******\n" +
                 "*******\n" +
                 "********\n" +
-                "*********\n";
-        String actual = TriangleUtilities.getLargeTriangle();
+                "*********\n" +
+                "**********\n";
+        String actual = TriangleUtilities.getTriangle(10);
         Assert.assertEquals(expected, actual);
     }
 
@@ -66,7 +69,7 @@ String actual = TriangleUtilities.getTriangle(5);
                         "**\n" +
                         "***\n" +
                         "****\n";
-        String actual = TriangleUtilities.getSmallTriangle();
+        String actual = TriangleUtilities.getTriangle(4);
         Assert.assertEquals(expected, actual);
     }
 }

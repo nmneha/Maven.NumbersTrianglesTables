@@ -4,9 +4,11 @@ public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
         String triangle = "";
-        for (int i = 0; i < numberOfRows; i++) {
-            triangle = triangle + "*\n";
+        for (int i = 1; i <= numberOfRows ; i++) {
+            triangle += TriangleUtilities.getRow(i) + "\n";
         }
+
+        System.out.println(triangle);
         return triangle;
     }
 
@@ -19,12 +21,10 @@ public class TriangleUtilities {
     }
 
     public static String getSmallTriangle() {
-
-        return null;
+        return TriangleUtilities.getTriangle(4);
     }
 
     public static String getLargeTriangle() {
-
-        return null;
+        return TriangleUtilities.getTriangle(10);
     }
 }
